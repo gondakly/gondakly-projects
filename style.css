@@ -1,0 +1,197 @@
+body{
+    font-family: 'Lato',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color:black;
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{/*To make the items with class navTop horizontal*/
+    display: flex;/*To make the items with class navTop horizontal*/
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-inline-end: 50px; /* IS TO MAKE SPACE BETWEEN EACH WORD IN THE H3 TAGS CARRYING NAME OF CLASS MENUITEM*/
+    cursor: pointer;/*CURSOR IS TO BE ABLE TO CLICK THEM & POINTER IS TO MAKE THE MOUSE APPEAR THE POINTER SYMBOL */
+    color: lightgray;
+    font-weight: 400;
+}
+.slider{
+    background: red;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 85%);
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;/* to make the elements after clicking the Menu Items slide easily*/
+}
+
+.sliderItem{
+    width: 700vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;/*z-index:1; is to make the circle shape let a a part of the title of the shoes appear through them */
+}
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;/* boarder radius is to make a circle shape*/
+    position: absolute;
+    
+}
+.sliderImg{
+    z-index: 1;/*z-index:1; is to make the circle shape let the shoes (picture)appear through them */
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.buyBotton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;/*to make the font bold with any degree I want*/
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;/*to make the buybotton clickable*/
+}
+.buyBotton:hover{
+    background-color: white;
+    color: black;
+}
+
+.sliderItem:nth-child(1) .sliderBg{
+    
+    background-color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: rebeccapurple;
+}
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: teal;
+}
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .sliderBg{
+    background-color: rgb(124,115,80);
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    
+    background-color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderPrice{
+    background-color: rebeccapurple;
+}
+.sliderItem:nth-child(3) .sliderPrice{
+    background-color: teal;
+}
+.sliderItem:nth-child(4) .sliderPrice{
+    background-color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .sliderPrice{
+    background-color: rgb(124,115,80);
+}
+.features{
+    display: flex;/*to make them display horizontally*/
+    align-items: center;/*to make them lay in a center position*/
+    justify-content: space-between;
+    padding: 50px;/*to make them lay 50px distance from the items above of them*/
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureIcon{
+    width: 50px;/* to give the size of the icon */
+    height: 50px;
+}
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.featuredDesc{
+color: gray;
+}
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%,100% 0,100% 100%,0 100%);
+}
+.productImg{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.productDesc{
+    font-style: 24px;
+    color: gray;
+}
+.colors,.sizes{
+display: flex;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+}
