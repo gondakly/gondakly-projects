@@ -1,0 +1,60 @@
+/* General reset for the body */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the form box */
+.form-box {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures black top aligns perfectly */
+}
+
+/* Black top section */
+.form-box .top-section {
+  background-color: #000;
+  height: 50px;
+}
+.form-box .top-section h1{
+    color: #FFDF00;
+    font-family: Niagara Engraved;
+    font-size:40px;
+}
+
+/* Content of the form */
+.form-box .form-content {
+  padding: 20px;
+}
+
+/* Example form styling */
+.form-box input,
+.form-box button {
+  display: block;
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-box button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-color: #FFDF00;
+}
+
+.form-box button:hover {
+  background-color:#FFDF00;
+}

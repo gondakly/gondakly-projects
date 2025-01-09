@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Signing</title>
+    <link rel="stylesheet" href="Style reg Cars.css">
+    <link rel="stylesheet" href="FavIcon.png">
+</head>
+<title>Sign Your Car</title>
+<body>
+            <div class="form-box">
+        <div class="top-section"><h1>Signing Your Car</h1></div>
+        <div class="form-content">
+          <form id="carForm" action="Sign Your Car.php" method="POST">
+            <label for="driverName">Driver Name:</label>
+            <input type="text" id="driverName" name="driverName" required>
+    
+            <label for="driverPhone">Driver Phone Number:</label>
+            <input type="text" id="driverPhone" name="driverPhone" required>
+    
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+    
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required>
+    
+            <label for="plateID">Plate ID:</label>
+            <input type="text" id="plateID" name="plateID" required>
+    
+            <label for="pricePerHour">Price Per Hour:</label>
+            <input type="number" step="0.01" id="pricePerHour" name="pricePerHour" required>
+    
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="active">Active</option>
+                <option value="out_of_service">Temporarily Out of Service</option>
+            </select>
+    
+            <button type="submit">Add Car</button>
+        </form>
+        </div>
+      </div>
+    </body>
+    </html>
+    

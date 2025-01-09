@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment: Choose Your Payment Method</title>
+    <link rel="stylesheet" href="Style reg Cars.css">
+</head>
+<body>
+    <div class="form-box">
+        <div class="top-section"><h1>Payment: Choose Your Payment Method</h1></div>
+        <div class="form-content">
+            <form action="Payments.php" method="POST">
+                <!-- Hidden field for Reservation ID (you can populate this dynamically) -->
+                <input type="hidden" name="reservationID" value="1"> <!-- Replace with actual Reservation ID -->
+
+                <!-- Payment Method -->
+                <label>Cash</label>
+                <input type="radio" name="payment" value="Cash" id="cashOption" checked>
+                <label>Credit Card</label>
+                <input type="radio" name="payment" value="Credit Card" id="creditCardOption">
+
+                <!-- Card Number Field -->
+                <br><label for="cardNo">Card No.:</label>
+                <input type="text" id="cardNo" name="cardNo" placeholder="ex: xxxx" disabled>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle enabling/disabling the card number field
+        const cashOption = document.getElementById('cashOption');
+        const creditCardOption = document.getElementById('creditCardOption');
+        const cardNoInput = document.getElementById('cardNo');
+
+        // Add event listeners to the radio buttons
+        cashOption.addEventListener('change', function() {
+            if (this.checked) {
+                cardNoInput.disabled = true;
+            }
+        });
+
+        creditCardOption.addEventListener('change', function() {
+            if (this.checked) {
+                cardNoInput.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Renting</title>
+    <link rel="stylesheet" href="Style reg Cars.css">
+    <link rel="stylesheet" href="FavIcon.png">
+</head>
+<body>
+            <div class="form-box">
+        <div class="top-section"><h1>Rent The Car</h1></div>
+        <div class="form-content">
+          <form id="reservationForm" action="Rent_The_Car[1]2.php" method="POST">
+            <label for="pickupAddress">Pickup Address:</label>
+            <input type="text" id="pickupAddress" name="pickupAddress" required>
+    
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+    
+            <label for="pickupStartHour">Pickup Start Hour:</label>
+            <input type="time" id="pickupStartHour" name="pickupStartHour" required>
+    
+            <label for="pickupEndHour">Pickup End Hour:</label>
+            <input type="time" id="pickupEndHour" name="pickupEndHour" required>
+    
+            <label for="CarID">Car ID:</label>
+            <input type="number" id="CarID" name="CarID" required>
+           <a href="Payment.html">Payment</a>
+            <br><a href="Car Feature.html">Search Your Car</a>
+            <button type="submit">Submit Reservation</button>
+        </form>
+        
+        <script src="App.js"></script>
+        </div>
+      </div>
+    </body>
+    </html>
+    

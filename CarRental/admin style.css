@@ -1,0 +1,44 @@
+
+.btn-delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #e60000;
+}
+
+.btn-insert {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-insert:hover {
+    background-color: #45a049;
+}
+
+.insert-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.insert-form input {
+    margin: 5px 10px 5px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% / 4 - 15px);
+}
+
+.insert-form button {
+    margin-top: 10px;
+}
