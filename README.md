@@ -1,2 +1,2 @@
-# gondakly-projects
-front end projects,Full-Stack Projects & Academic projects
+**# Gondakly-projects**
+*front-end projects, Full-Stack Projects, Academic projects & My Personal Projects
